@@ -45,6 +45,6 @@ var $ = function (selector) {
   if (res.getElementById != undefined) {
     elements = intersection([res.getElementById],intersect);
   } else elements = intersect;
-
+  if (elements == undefined) return [];
   return elements;
 }
