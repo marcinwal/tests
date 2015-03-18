@@ -1,0 +1,1 @@
+This folder is for small tech tests in different technologies.
