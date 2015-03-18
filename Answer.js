@@ -16,8 +16,7 @@ var $ = function (selector) {
     return result;
   }
 
-  //fetching DOM objects for all types
-  var find = function(task){
+  var fetchDOMObjects = function(task){
     var results = {};
     for(query in task){
       results[query] = document[query](task[query]);
@@ -40,7 +39,7 @@ var $ = function (selector) {
   var elements = [];
 
   var task = queryElements(selector);
-  var res = find(task);
+  var res = fetchDOMObjects(task);
   var intersect = intersection(res.getElementsByTagName,res.getElementsByClassName);
   if (res.getElementById != undefined) {
     elements = intersection([res.getElementById],intersect);
