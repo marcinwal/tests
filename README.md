@@ -19,12 +19,7 @@ I did by using RegEx and stored results in Object with field names being the met
     It can be easily extended to more selectors.
     I would need to change a bit logic of final actions(looping throug selectors arrays looking for their intersections one by another).
 
-All tests passed; I added line 47 to be in line with spec(empty array was expected) althoug test passed without that line.
+All tests passed; I added line 47 to be in line with spec(empty array was expected) although test passed without that line.
 
 
-Notes.
-
-Initially I solved more complex problem which was unnecessary as I understood that no selectors were allowed.
-I converted DOM to text and was running full RegEx only to find all elements but I was returning arrays of strings instead of arrays of DOM objects.
-It can be found in OldAnswer.js
 
